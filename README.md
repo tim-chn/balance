@@ -1,1 +1,1 @@
-# balance
+# Special Olympics Balance
