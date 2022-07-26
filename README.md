@@ -1,5 +1,5 @@
 # Special Olympics Balance
-This is a documentation of all the code used for the data analysis of the special olympics data set using R studio and the gamlss library.
+This is a documentation of secondary data analysis on a special olympics data set.
 
 ## Background
 There is a dire need for high quality, population-level research relating to the health of individuals with intellectual disabilities (ID). For around two decades, Special Olympics International has been conducting “Healthy Athletes” screenings at (inter)national and regional events. “Healthy Athletes” is the largest known international database related to health outcomes and ID. However, the database is under-utilized from a research perspective. 
