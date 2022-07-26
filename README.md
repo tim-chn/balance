@@ -13,7 +13,7 @@ Therefore, the purpose of this study was to develop North American sex and age s
 ### Data Access and Prepping
 - Received study approval as well as access to the FUNfitness dataset from Special Olympics
 - The dataset underwent various cleaning and prepping procedures. The final step was imputation
-  - N=12,932, Mage=15.87y (SD=3.51); 62% boys
+  - N=12,932, Mean age=15.87y (SD=3.51); 62% boys
 
 ### Test
 - Right and left forward functional reaches (see figure) 
