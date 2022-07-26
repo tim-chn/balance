@@ -1,6 +1,4 @@
-datM=read.table(file.choose(),header=TRUE, sep=",")
-datF=read.table(file.choose(),header=TRUE, sep=",")
-dat=read.table(file.choose(),header=TRUE, sep=",")
+datM=read.table("Male_FunF_8+.csv",header=TRUE, sep=",")
 library(gamlss)
 
 ###CURVE FITTING
