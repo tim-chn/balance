@@ -49,10 +49,8 @@ Therefore, the purpose of this study was to develop North American sex and age s
 6. Maiano, C., Hue, O., Morin, A. J., Lepage, G., Tracey, D., & Moullec, G. (2019). Exercise interventions to improve balance for young people with intellectual disabilities: a systematic review and meta‐analysis. Developmental Medicine & Child Neurology, 61(4), 406-418.
 7. Duncan, P. W., Weiner, D. K., Chandler, J., & Studenski, S. (1990). Functional reach: a new clinical measure of balance. Journal of gerontology, 45(6), M192-M197.
 8. Horak, F. B., Wrisley, D. M., & Frank, J. (2009). The balance evaluation systems test (BESTest) to differentiate balance deficits. Physical therapy, 89(5), 484-498.
-9. https://towardsdatascience.com/data-cleaning-in-r-made-simple-1b77303b0b17
-10. https://statsandr.com/blog/outliers-detection-in-r/
-11. Stekhoven, D. J., & Bühlmann, P. (2012). MissForest—non-parametric missing value imputation for mixed-type data. Bioinformatics, 28(1), 112-118.
-12. Stasinopoulos, M. D., Rigby, R. A., Heller, G. Z., Voudouris, V., & De Bastiani, F. (2017). Flexible regression and smoothing: using GAMLSS in R. CRC Press.
-13. Buuren, S. V., & Fredriks, M. (2001). Worm plot: a simple diagnostic device for modelling growth reference curves. Statistics in medicine, 20(8), 1259-1277.
+10. Stekhoven, D. J., & Bühlmann, P. (2012). MissForest—non-parametric missing value imputation for mixed-type data. Bioinformatics, 28(1), 112-118.
+11. Stasinopoulos, M. D., Rigby, R. A., Heller, G. Z., Voudouris, V., & De Bastiani, F. (2017). Flexible regression and smoothing: using GAMLSS in R. CRC Press.
+12. Buuren, S. V., & Fredriks, M. (2001). Worm plot: a simple diagnostic device for modelling growth reference curves. Statistics in medicine, 20(8), 1259-1277.
 
 
