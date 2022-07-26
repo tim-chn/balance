@@ -31,7 +31,7 @@ Therefore, the purpose of this study was to develop North American sex and age s
   
 
 ## Results
-<img width="1000" alt="image" src="https://user-images.githubusercontent.com/100978347/181094078-53446550-ce0b-432e-afed-b73a955c0409.png">
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/100978347/181094078-53446550-ce0b-432e-afed-b73a955c0409.png">
 
 ## Discussion/Conclusion
 - First results of their kind; robust centiles due to the large sample size and the advanced modeling techniques.
