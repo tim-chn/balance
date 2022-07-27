@@ -1,6 +1,16 @@
 # Special Olympics Balance
 This is a project for the Keck Data Science Undergraduate Research at Pepperdine University overseed by [Dr. Adam Pennell](https://seaver.pepperdine.edu/academics/faculty/adam-pennell/) with collaboration from [Dr. Robert Rigby](https://www.londonmet.ac.uk/profiles/staff/robert-rigby/) and [Professor Mikis Stasinopoulos](https://scholar.google.com/citations?user=n9OHjHYAAAAJ&hl=en). It aims to create precise centile curves using the GAMLSS framework in R for various balance related variables from a Special Olympics dataset.
 
+### Table of Contents
+- [Background](https://github.com/timchen37/balance/edit/main/README.md#background)
+- [Methods](https://github.com/timchen37/balance/edit/main/README.md#methods)
+  - [Data Access and Prepping](https://github.com/timchen37/balance/edit/main/README.md#data-access-and-prepping)
+  - [Test](https://github.com/timchen37/balance/edit/main/README.md#test)
+  - [Analysis](https://github.com/timchen37/balance/edit/main/README.md#analysis)
+- [Results](https://github.com/timchen37/balance/edit/main/README.md#results)
+- [Discussion/conclusion](https://github.com/timchen37/balance/edit/main/README.md#discussionconclusion)
+- [References](https://github.com/timchen37/balance/edit/main/README.md#references)
+
 ## Background
 There is a dire need for high quality, population-level research relating to the health of individuals with intellectual disabilities (ID). For around two decades, Special Olympics International has been conducting “Healthy Athletes” screenings at (inter)national and regional events. “Healthy Athletes” is the largest known international database related to health outcomes and ID. However, the database is under-utilized from a research perspective. 
 
@@ -12,7 +22,7 @@ Therefore, the purpose of this study was to develop North American sex and age s
 ## Methods
 ### Data Access and Prepping
 - Received study approval as well as access to the FUNfitness dataset from Special Olympics
-- The dataset underwent various cleaning and prepping procedures. The final step was imputation
+- The dataset underwent various cleaning and prepping procedures. The final step was [imputation](https://academic.oup.com/bioinformatics/article/28/1/112/219101).
   - N=12,932, Mean age=15.87y (SD=3.51); 62% boys
 
 ### Test
@@ -21,24 +31,27 @@ Therefore, the purpose of this study was to develop North American sex and age s
 <img width="210" alt="image" src="https://user-images.githubusercontent.com/100978347/181093649-8e8e046d-236e-4027-a87a-a6dfaf576408.png">
 
 ### Analysis
-- Generalized additive models for location, scale and shape (GAMLSS)
-  - Cutting-edge statistical modeling technique.
-  - Location, scale, skewness, *kurtosis.
-- Chose the best distribution (lower Akaike information criterion [AIC]): logJSU (boys), logSEP4 (girls).
-- Model diagnostics: quantile residual coefficients and visuals; emphasis on worm plots.
-- Create centiles curves
-  - Boys left reach: applied a local penalty to improve smoothness of the curves while maintaining model integrity.
+We utilize generalized additive models for location, scale and shape (GAMLSS), a cutting edge statistical modelling technique that models four parameters, location, scale, skewness, and kurtosis, to fit the data to a GAMLSS family distribution. gamlss.dist includes over 50 different continuous distributions, one of which is chosen by the choosedist() function using minimum generalized akaike information criterion (GAIC).
+
+For both male and female, choosedist() calculates the Generalized Gamma (GG) distribution as the best fit. However, the s shaped [worm plot](https://pubmed.ncbi.nlm.nih.gov/11304741/) indicates a failure to adequately fit kurtosis. This is expected for data with kurtosis, since the GG distribution does not fit the tau kurtosis parameter.
+
+The data is then fit using a log transformation. The function choosedist() chooses a distribution for the log transformed values for reach. A log family of the chosen distribution is generated and fitted with the non transformed reach data. The function gen.Family() generates a log distribution for the chosen family, and the data is then fit to the distribution. The data is then compared using model diagnostics (i.e. worm plots, quantile residual visuals and coefficients, minimum AIC).
+
+The centiles() function generates the centiles curves. A local penalty was applied for boys left reach to improve smoothness of the curves while maintaining model integrity. 
+
+All steps are included in [analysis.R](https://github.com/timchen37/balance/blob/main/analysis.R).
   
 
 ## Results
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/100978347/181094078-53446550-ce0b-432e-afed-b73a955c0409.png">
 
 ## Discussion/Conclusion
-- First results of their kind; robust centiles due to the large sample size and the advanced modeling techniques.
-- These centiles may be adopted by practitioners and used for clinical practice (e.g., score interpretation) in the respective population. 
-- Boys right and left reach 98th centiles were somewhat elevated at the youngest ages.
+These centiles are the first results of their kind. The methods used generated robust centiles due to the large sample size and the advanced modeling techniques. The results may be adopted by practitioners and used for clinical practice (e.g., score interpretation) in the respective population. 
+
+Some notable observations: 
+- Boys right and left reach 98th centiles were somewhat elevated at the youngest ages, which seems counterintuitive and unexpected. This could be due to less data for younger individuals. 
 - Within each sex, right and left reach curves were similar; between sexes, boys 98th centile appeared slightly elevated.
-- Limitations: data collection concerns (e.g., data entry, administration consistency); data cleaning procedures; model diagnostics (i.e., worm plots).
+- Limitations: data collection concerns (e.g., data entry, administration consistency); data cleaning procedures; model diagnostics (i.e., worm plots) were not perfect.
 
 ### References
 1. Lloyd, M., Foley, J. T., & Temple, V. A. (2018). Maximizing the use of Special Olympics International's Healthy Athletes database: A call to action. Research in Developmental Disabilities, 73, 58-66.
