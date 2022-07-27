@@ -25,7 +25,7 @@ Therefore, the purpose of this study was to develop North American sex and age s
   - Cutting-edge statistical modeling technique.
   - Location, scale, skewness, *kurtosis.
 - Chose the best distribution (lower Akaike information criterion [AIC]): logJSU (boys), logSEP4 (girls).
-- Model diagnostics: quantile residual coefficients and visuals; emphasis on worm plots.13
+- Model diagnostics: quantile residual coefficients and visuals; emphasis on worm plots.
 - Create centiles curves
   - Boys left reach: applied a local penalty to improve smoothness of the curves while maintaining model integrity.
   
