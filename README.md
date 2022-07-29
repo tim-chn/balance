@@ -2,14 +2,14 @@
 This is a project for the Keck Data Science Undergraduate Research at Pepperdine University overseen by [Dr. Adam Pennell](https://seaver.pepperdine.edu/academics/faculty/adam-pennell/) with collaboration from [Dr. Robert Rigby](https://www.londonmet.ac.uk/profiles/staff/robert-rigby/) and [Professor Mikis Stasinopoulos](https://scholar.google.com/citations?user=n9OHjHYAAAAJ&hl=en). It aims to create precise centile curves using the GAMLSS framework in R for various balance related variables from a Special Olympics dataset.
 
 ### Table of Contents
-- [Background](https://github.com/timchen37/balance/edit/main/README.md#background)
-- [Methods](https://github.com/timchen37/balance/edit/main/README.md#methods)
-  - [Data Access and Prepping](https://github.com/timchen37/balance/edit/main/README.md#data-access-and-prepping)
-  - [Test](https://github.com/timchen37/balance/edit/main/README.md#test)
-  - [Analysis](https://github.com/timchen37/balance/edit/main/README.md#analysis)
-- [Results](https://github.com/timchen37/balance/edit/main/README.md#results)
-- [Discussion/conclusion](https://github.com/timchen37/balance/edit/main/README.md#discussionconclusion)
-- [References](https://github.com/timchen37/balance/edit/main/README.md#references)
+- [Background](#background)
+- [Methods](#methods)
+  - [Data Access and Prepping](#data-access-and-prepping)
+  - [Test](#test)
+  - [Analysis](#analysis)
+- [Results](#results)
+- [Discussion/conclusion](#discussionconclusion)
+- [References](#references)
 
 ## Background
 There is a dire need for high quality, population-level research relating to the health of individuals with intellectual disabilities (ID). For around two decades, Special Olympics International has been conducting “Healthy Athletes” screenings at (inter)national and regional events. “Healthy Athletes” is the largest known international database related to health outcomes and ID. However, the database is under-utilized from a research perspective. 
