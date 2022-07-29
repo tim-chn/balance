@@ -1,5 +1,5 @@
 # Balance centiles for individuals with intellectual disability
-This is a project for the Keck Data Science Undergraduate Research at Pepperdine University overseed by [Dr. Adam Pennell](https://seaver.pepperdine.edu/academics/faculty/adam-pennell/) with collaboration from [Dr. Robert Rigby](https://www.londonmet.ac.uk/profiles/staff/robert-rigby/) and [Professor Mikis Stasinopoulos](https://scholar.google.com/citations?user=n9OHjHYAAAAJ&hl=en). It aims to create precise centile curves using the GAMLSS framework in R for various balance related variables from a Special Olympics dataset.
+This is a project for the Keck Data Science Undergraduate Research at Pepperdine University overseen by [Dr. Adam Pennell](https://seaver.pepperdine.edu/academics/faculty/adam-pennell/) with collaboration from [Dr. Robert Rigby](https://www.londonmet.ac.uk/profiles/staff/robert-rigby/) and [Professor Mikis Stasinopoulos](https://scholar.google.com/citations?user=n9OHjHYAAAAJ&hl=en). It aims to create precise centile curves using the GAMLSS framework in R for various balance related variables from a Special Olympics dataset.
 
 ### Table of Contents
 - [Background](https://github.com/timchen37/balance/edit/main/README.md#background)
