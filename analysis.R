@@ -42,7 +42,7 @@ l1 <-  gamlss(Lreach_R ~ pb(age_years),
               sigma.formula = ~ pb(age_years), 
               nu.formula = ~ pb(age_years),  
               tau.formula = ~ pb(age_years), 
-              family = GG, data = datM, n.cyc=50, c.crit=0.01)
+              family = SHASH, data = datM, n.cyc=50, c.crit=0.01)
 
 l2 <- chooseDist(l1, type = "realline", k=c(2,4,log(8134)), parallel="snow", ncpus=4)
 #minimum GAIC(k= 9.003808 ) family: JSU (JSU distribution chosen)
